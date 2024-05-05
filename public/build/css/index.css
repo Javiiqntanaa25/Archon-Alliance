@@ -1,0 +1,430 @@
+
+html{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: wheat;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -2;
+}
+.backgroundb{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.uid_container{
+    width: 500px;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+.cerrar{
+    margin-left: 10em;
+    text-decoration: none;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    color: wheat;
+    border-bottom: 1px solid wheat;
+}
+.textoUID{
+    height: 20px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.info{
+    justify-content: center;
+}
+.uid_container button{
+    height: 26px;
+}
+.uid_container p{
+    font-weight: bold;
+    font-size: larger;
+}
+header{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    height: 50px;
+}
+header h1{
+    margin-left: 120px;
+}
+section{
+    display:flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+section h3{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.nivel{
+    display: flex;
+    flex-direction: row;
+    width: 180px;
+    justify-content: space-between;
+}
+.RA , .NM{
+    display: flex;
+    flex-direction: row;
+}
+.informacion{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contenedor-info{
+    display: flex;
+    flex-direction: row;
+    width: 347px;
+}
+.icon-teams{
+    margin-top: 30px;
+    background-color: rgba(245, 222, 179, 0.534);
+    height: 100px;
+    
+}
+.container-teams{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100px;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.iconoteam{
+    /* background-image: url(./IMG/plus.png); */
+    width: 85px;
+    height: 85px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+.containerpjs{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+.cont{
+    border-radius: 1em;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    backdrop-filter: blur(5px); /* Ajusta el valor (10px en este ejemplo) según tus preferencias */
+    background-color: rgba(0, 0, 0, 0.452);
+}
+.pj{
+    width: 145px;
+    height: 464px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid wheat;
+    border-radius: 1em;
+    
+}
+.plus{
+    justify-content: center;
+    border: 3px solid wheat;
+    border-radius: 50%;
+    background-color: wheat;
+}
+.gacha4{
+    justify-content: center;
+    background: url(../img/4starsBG.png);
+    background-repeat: no-repeat;  
+    background-size: cover;
+    border-radius: 1em;
+    height: 465px;
+    width: 145px;
+}
+.gacha5{
+    justify-content: center;
+    background: url(../img/5starsBG.png); 
+    border-radius: 1em; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 465px;
+    width: 145px;
+}
+.pj a img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Guardarequipo{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    
+}
+.Guardarequipo a{
+    backdrop-filter: blur(5px); /* Ajusta el valor (10px en este ejemplo) según tus preferencias */
+    background-color: rgba(0, 0, 0, 0.452);
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: wheat;
+    border: 2px solid wheat;
+    border-radius: 1em;
+    width: 200px;
+}
+.Borrarequipo a{
+    backdrop-filter: blur(5px); /* Ajusta el valor (10px en este ejemplo) según tus preferencias */
+    background-color: rgba(0, 0, 0, 0.452);
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: wheat;
+    border: 2px solid wheat;
+    border-radius: 1em;
+    width: 200px;
+    margin-left: 5rem;
+}
+.Actualizarequipo a{
+    backdrop-filter: blur(5px); /* Ajusta el valor (10px en este ejemplo) según tus preferencias */
+    background-color: rgba(0, 0, 0, 0.452);
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: wheat;
+    border: 2px solid wheat;
+    border-radius: 1em;
+    width: 200px;
+    margin-left: 5rem;
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+/* ----------------------characters.php------------------------ */
+.menu{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+.filtros{
+    height: 80px;
+    margin-top: 11rem;
+    background-color: rgba(245, 222, 179, 0.534);
+    
+}
+.rarezas{
+    height: 60px;
+    width: 150px;
+    
+    border-radius: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.rareza{
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+    justify-content: space-around;
+    border-radius: 1em;
+    backdrop-filter: blur(5px); /* Ajusta el valor (10px en este ejemplo) según tus preferencias */
+    background-color: rgba(0, 0, 0, 0.452);
+}
+.rarezas a{
+    color: wheat;
+    text-decoration: none;
+}
+.rareza img{
+    width: 20px;
+    height: 20px;
+}
+.armas{
+    height: 60px;
+    width: 500px;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.arma{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 1em;
+    backdrop-filter: blur(5px); /* Ajusta el valor (10px en este ejemplo) según tus preferencias */
+    background-color: rgba(0, 0, 0, 0.452);
+}
+.elementos{
+    height: 60px;
+    width: 500px;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.lanza img, .espada_ligera img{
+    margin-left: 5px;
+}
+.elemento{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 1em;
+    backdrop-filter: blur(5px); /* Ajusta el valor (10px en este ejemplo) según tus preferencias */
+    background-color: rgba(0, 0, 0, 0.452);
+}
+.filtros a{
+    border-radius: 1em;
+}
+
+.contenidos{
+    border-radius: 1em;
+    backdrop-filter: blur(5px); /* Ajusta el valor (10px en este ejemplo) según tus preferencias */
+    background-color: rgba(0, 0, 0, 0.452);
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-pjs{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.personaje4{
+    color: wheat;
+    padding: 2rem;
+    border: 2px solid wheat;
+    border-radius: 1em;
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/4starsBG.png);
+}
+.personaje5{
+    color: wheat;
+    padding: 2rem;
+    border: 2px solid wheat;
+    border-radius: 1em;
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/5starsBG.png);
+}
+.contenido-pj{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.eliminar{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+}
+picture{
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width: 480px) {
+    .contenedor-info{
+        justify-content: flex-end;
+    }
+    .icon-teams{
+        width: 480px;
+    }
+    .container-teams{
+        margin-left: 200px;
+    }
+    .containerpjs{
+        width: 480px;
+    }
+    .cont{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2, auto);
+        height: 1000px;
+        width: 660px;
+        gap: 10px;
+        padding: 80px;
+    }
+    .Borrarequipo a{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .contenedor-pjs{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .personaje{
+        width: 142px;
+        height: 232px;
+    }
+    picture{
+        height: 50%;
+        width: 50%;
+        margin-left: 35px;
+    }
+    .personaje h3{
+        text-align: center;
+        margin: 5px;
+    }
+    .weapon, .element{
+        margin: 5px;
+    }
+    .filtros{
+        width: 480px;
+        height: 300px;
+    }
+    .menu{
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+  } 

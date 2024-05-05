@@ -1,0 +1,17 @@
+{
+    "name": "oscar_javi/projectg",
+    "autoload": {
+        "psr-4": {
+            "MVC\\" : "./",
+            "Controllers\\" : "./controllers",
+            "Model\\" : "./models"
+        }
+    },
+    "authors": [
+        {
+            "name": "oscaarrc",
+            "email": "oscarramoscastellano@gmail.com"
+        }
+    ],
+    "require": {}
+}
