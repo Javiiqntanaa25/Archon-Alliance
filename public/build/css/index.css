@@ -371,6 +371,8 @@ picture{
     display: flex;
     justify-content: center;
 }
+
+/* Version movil */
 @media only screen and (max-width: 480px) {
     .contenedor-info{
         justify-content: flex-end;
@@ -379,7 +381,7 @@ picture{
         width: 480px;
     }
     .container-teams{
-        margin-left: 200px;
+        margin-left: 65px;
     }
     .containerpjs{
         width: 480px;
@@ -428,3 +430,40 @@ picture{
         justify-content: space-around;
     }
   } 
+  /* Version Tablet */
+  @media only screen and (min-width: 481px) and (max-width: 834px) {
+    .Borrarequipo a{
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .contenedor-pjs{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .personaje{
+        width: 282px;
+        height: 372px;
+    }
+    picture{
+        height: 50%;
+        width: 50%;
+        margin-left: 75px;
+    }
+    .personaje h3{
+        text-align: center;
+        margin: 5px;
+    }
+    .weapon, .element{
+        margin: 5px;
+    }
+    .filtros{
+        width: 834px;
+        height: 300px;
+    }
+    .menu{
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+  }
