@@ -49,16 +49,105 @@ if(isset($_GET['id_team'])){
     <div class="icon-teams">
         <div class="container-teams">
             <a href="./index.php?id_team=0" class="team1 iconoteam icon-team1">
-            <img src="../../build/img/plus.png">
+                <?php
+                    if($equipo==0){
+                        if($res[$equipo][0] != null){
+                    ?> 
+                    <img src="../../build/img/img_icon/<?php if($res[$equipo]){ echo $res[$equipo][0]->img;}?>" class="<?php if($res[$equipo][0]->rareza==4){ echo "g4 iconoequipo";} else if($res[$equipo][0]->rareza==5){ echo "g5 iconoequipo";}?>">
+                    <?php 
+                        }elseif($res[$equipo][1] != null){
+                    ?>
+                    <img src="../../build/img/img_icon/<?php if($res[$equipo]){ echo $res[$equipo][1]->img;}?>" class="<?php if($res[$equipo][1]->rareza==4){ echo "g4 iconoequipo";} else if($res[$equipo][1]->rareza==5){ echo "g5 iconoequipo";}?>">
+                    <?php
+                        }elseif($res[$equipo][2] != null){
+                            ?>
+                            <img src="../../build/img/img_icon/<?php if($res[$equipo]){ echo $res[$equipo][2]->img;}?>" class="<?php if($res[$equipo][2]->rareza==4){ echo "g4 iconoequipo";} else if($res[$equipo][2]->rareza==5){ echo "g5 iconoequipo";}?>">
+                    <?php
+                        }elseif($res[$equipo][3] != null){
+                            ?>
+                            <img src="../../build/img/img_icon/<?php if($res[$equipo]){ echo $res[$equipo][3]->img;}?>" class="<?php if($res[$equipo][3]->rareza==4){ echo "g4 iconoequipo";} else if($res[$equipo][3]->rareza==5){ echo "g5 iconoequipo";}?>">
+                    <?php
+                    }}else{?>
+                        <img src="../../build/img/plus.png"> 
+                    <?php
+                    }
+                ?>
             </a>
             <a href="./index.php?id_team=1" class="team2 iconoteam icon-team2">
-            <img src="../../build/img/plus.png">
+                    <?php
+                        if($equipo==1){
+                            if($res[$equipo][0] != null){
+                        ?> 
+                        <img src="../../build/img/img_icon/<?php if($res[$equipo]){ echo $res[$equipo][0]->img;}?>" class="<?php if($res[$equipo][0]->rareza==4){ echo "g4 iconoequipo";} else if($res[$equipo][0]->rareza==5){ echo "g5 iconoequipo";}?>">>
+                        <?php 
+                            }elseif($res[$equipo][1] != null){
+                        ?>
+                        <img src="../../build/img/img_icon/<?php if($res[$equipo]){ echo $res[$equipo][1]->img;}?>" class="<?php if($res[$equipo][1]->rareza==4){ echo "g4 iconoequipo";} else if($res[$equipo][1]->rareza==5){ echo "g5 iconoequipo";}?>">
+                        <?php
+                            }elseif($res[$equipo][2] != null){
+                                ?>
+                                <img src="../../build/img/img_icon/<?php if($res[$equipo]){ echo $res[$equipo][2]->img;}?>" class="<?php if($res[$equipo][2]->rareza==4){ echo "g4 iconoequipo";} else if($res[$equipo][2]->rareza==5){ echo "g5 iconoequipo";}?>">
+                        <?php
+                            }elseif($res[$equipo][3] != null){
+                                ?>
+                                <img src="../../build/img/img_icon/<?php if($res[$equipo]){ echo $res[$equipo][3]->img;}?>" class="<?php if($res[$equipo][3]->rareza==4){ echo "g4 iconoequipo";} else if($res[$equipo][3]->rareza==5){ echo "g5 iconoequipo";}?>">
+                        <?php
+                        }}else{?>
+                            <img src="../../build/img/plus.png"> 
+                        <?php
+                        }
+                    ?>
             </a>
             <a href="./index.php?id_team=2" class="team3 iconoteam icon-team3">
-            <img src="../../build/img/plus.png">
+                    <?php
+                        if($equipo==2){
+                            if($res[$equipo][0] != null){
+                        ?> 
+                        <img src="../../build/img/img_icon/<?php if($res[$equipo]){ echo $res[$equipo][0]->img;}?>" class="<?php if($res[$equipo][0]->rareza==4){ echo "g4 iconoequipo";} else if($res[$equipo][0]->rareza==5){ echo "g5 iconoequipo";}?>">
+                        <?php 
+                            }elseif($res[$equipo][1] != null){
+                        ?>
+                        <img src="../../build/img/img_icon/<?php if($res[$equipo]){ echo $res[$equipo][1]->img;}?>" class="<?php if($res[$equipo][1]->rareza==4){ echo "g4 iconoequipo";} else if($res[$equipo][1]->rareza==5){ echo "g5 iconoequipo";}?>">
+                        <?php
+                            }elseif($res[$equipo][2] != null){
+                                ?>
+                                <img src="../../build/img/img_icon/<?php if($res[$equipo]){ echo $res[$equipo][2]->img;}?>" class="<?php if($res[$equipo][2]->rareza==4){ echo "g4 iconoequipo";} else if($res[$equipo][2]->rareza==5){ echo "g5 iconoequipo";}?>">
+                        <?php
+                            }elseif($res[$equipo][3] != null){
+                                ?>
+                                <img src="../../build/img/img_icon/<?php if($res[$equipo]){ echo $res[$equipo][3]->img;}?>" class="<?php if($res[$equipo][3]->rareza==4){ echo "g4 iconoequipo";} else if($res[$equipo][3]->rareza==5){ echo "g5 iconoequipo";}?>">
+                        <?php
+                        }}else{?>
+                            <img src="../../build/img/plus.png"> 
+                        <?php
+                        }
+                    ?>
             </a>
             <a href="./index.php?id_team=3" class="team4 iconoteam icon-team4">
-                <img src="../../build/img/plus.png">
+                    <?php
+                        if($equipo==3){
+                            if($res[$equipo][0] != null){
+                        ?> 
+                        <img src="../../build/img/img_icon/<?php if($res[$equipo]){ echo $res[$equipo][0]->img;}?>" class="<?php if($res[$equipo][0]->rareza==4){ echo "g4 iconoequipo";} else if($res[$equipo][0]->rareza==5){ echo "g5 iconoequipo";}?>">
+                        <?php 
+                            }elseif($res[$equipo][1] != null){
+                        ?>
+                        <img src="../../build/img/img_icon/<?php if($res[$equipo]){ echo $res[$equipo][1]->img;}?>" class="<?php if($res[$equipo][1]->rareza==4){ echo "g4 iconoequipo";} else if($res[$equipo][1]->rareza==5){ echo "g5 iconoequipo";}?>">
+                        <?php
+                            }elseif($res[$equipo][2] != null){
+                                ?>
+                                <img src="../../build/img/img_icon/<?php if($res[$equipo]){ echo $res[$equipo][2]->img;}?>" class="<?php if($res[$equipo][2]->rareza==4){ echo "g4 iconoequipo";} else if($res[$equipo][2]->rareza==5){ echo "g5 iconoequipo";}?>">
+                        <?php
+                            }elseif($res[$equipo][3] != null){
+                                ?>
+                                <img src="../../build/img/img_icon/<?php if($res[$equipo]){ echo $res[$equipo][3]->img;}?>" class="<?php if($res[$equipo][3]->rareza==4){ echo "g4 iconoequipo";} else if($res[$equipo][3]->rareza==5){ echo "g5 iconoequipo";}?>">
+                        <?php
+                        }}else{?>
+                            <img src="../../build/img/plus.png"> 
+                        <?php
+                        }
+                    ?>
+                        
             </a>
         </div>
     </div>

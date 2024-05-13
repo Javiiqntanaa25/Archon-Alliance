@@ -117,6 +117,7 @@ section h3{
 }
 .iconoteam{
     /* background-image: url(./IMG/plus.png); */
+    overflow: hidden;
     width: 85px;
     height: 85px;
     border: 2px solid black;
@@ -370,6 +371,21 @@ section h3{
 picture{
     display: flex;
     justify-content: center;
+}
+.iconoequipo{
+    width: 120%;
+    height: 120%;
+    /* object-fit: cover; */
+}
+.g4{
+    background: url(../img/4starsBG.png);
+    background-repeat: no-repeat;  
+    background-size: cover;
+}
+.g5{
+    background: url(../img/5starsBG.png);
+    background-repeat: no-repeat;  
+    background-size: cover;
 }
 
 /* Version movil */
