@@ -6,9 +6,9 @@
  * @return PDO|false Retorna el objeto PDO de la conexión establecida o false en caso de error.
  */
 function conectarDB(){
-    $dns = 'mysql:dbname=projectg;host=localhost';
-    $user= 'root'; 
-    $password = ''; 
+    $dns = 'mysql:host=roundhouse.proxy.rlwy.net;port=51212;dbname=railway';
+    $user = 'root'; 
+    $password = 'DgjimlismCYHrsbwZkbEVzptwYveHMww'; 
 
     try {
         // Intenta establecer la conexión
