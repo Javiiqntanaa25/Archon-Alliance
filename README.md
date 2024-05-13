@@ -1,4 +1,4 @@
-# ProjectG (PHP)
+# Archon Alliance
 
 # Tabla de contenidos
 
@@ -23,7 +23,7 @@
 
 ## Descripción
 
-¡Bienvenido a "ProjectG", tu plataforma definitiva para crear los equipos perfectos en el fascinante mundo de Genshin Impact! Nuestra herramienta intuitiva te permite experimentar con personajes para construir el equipo ideal que se adapte a tu estilo de juego.
+¡Bienvenido a "Archon Alliance", tu plataforma definitiva para crear los equipos perfectos en el fascinante mundo de Genshin Impact! Nuestra herramienta intuitiva te permite experimentar con personajes para construir el equipo ideal que se adapte a tu estilo de juego.
 
 Explora una amplia gama de personajes. Con la capacidad de probar diferentes combinaciones, podrás descubrir sinergias poderosas y desbloquear el potencial máximo de tus personajes favoritos. 
 
