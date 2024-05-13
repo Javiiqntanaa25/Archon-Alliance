@@ -17,7 +17,7 @@ class PaginasController {
      * @param Router $router El enrutador utilizado para renderizar vistas.
      */
     public static function index(Router $router) {
-        validarLogin(); // Se asume que validarLogin() es una función definida en otro lugar
+        validarLogin(); 
         $user = $_SESSION["usuario"];
         $usuario = Usuario::find($user);
         $equipos = [];

@@ -32,7 +32,7 @@ class Usuario extends ActiveRecord {
         $this->usrName = $args['usrName'] ?? null;
         $this->lvl = $args['lvl'] ?? null;
         $this->WorldLevel = $args['WorldLevel'] ?? null;
-        $this->PFP = $args['PFP'] ?? null;
+        $this->PFP = $args['character'] ?? null;
         $this->usrDescription = $args['usrDescription'] ?? null;
     }
 
@@ -136,6 +136,7 @@ class Usuario extends ActiveRecord {
         $_SESSION['desc']=$this->usrDescription;
         $_SESSION['RA']=$this->lvl;
         $_SESSION['NM']=$this->WorldLevel;
+        $_SESSION['PFP']=$this->PFP;
 
 
          header('Location: /?id_team=0');
@@ -147,9 +148,8 @@ class Usuario extends ActiveRecord {
      * @return mixed El resultado de la consulta.
      */
     public function registrar(){
-        $query="INSERT INTO player (ID, passw, usrName, lvl, WorldLevel, usrDescription) VALUES 
-                ('$this->ID', '$this->passw', '$this->usrName', '$this->lvl','$this->WorldLevel','$this->usrDescription');";
-
+        $query="INSERT INTO player (ID, passw, usrName, lvl, WorldLevel, usrDescription, PFP) VALUES 
+                ('$this->ID', '$this->passw', '$this->usrName', '$this->lvl','$this->WorldLevel','$this->usrDescription','$this->PFP');";
         return self::$db->query($query);
     }
 }

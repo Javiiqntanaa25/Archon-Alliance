@@ -79,6 +79,9 @@ section h3{
     margin-top: 0;
     margin-bottom: 5px;
 }
+.prota{
+    width: 100%;
+}
 .nivel{
     display: flex;
     flex-direction: row;

@@ -39,14 +39,33 @@
                     </div>
                 </div>
                 <div class="datos">
-                    <div class="RA">
-                        <label class="ra">RA:</label> 
-                        <input type="number" min="1" max="60" id="ra" name="lvl">
+                    <div class="niveles">
+                        <div class="RA">
+                            <label class="ra">RA:</label> 
+                            <input type="number" min="1" max="60" id="ra" name="lvl">
+                        </div>
+                        <div class="NM">
+                            <label class="nm">NM:</label>
+                            <input type="number" min="1" max="8" id="nm" name="WorldLevel">
+                        </div>
                     </div>
-                    <div class="NM">
-                        <label class="nm">NM:</label>
-                        <input type="number" min="1" max="8" id="nm" name="WorldLevel">
-                    </div>
+                        <div class="pjprincipal">
+                            <label class="Personaje">Personaje:</label>
+                            <div class="genero">
+                                <div class="femenino">
+                                    <label class="Lumine" >Lumine</label>
+                                    <input type="radio" name="character" id="lumine" value="lumine.png">
+                                </div>
+                                <div class="masculino">
+                                    <label class="Aether" >Aether</label>
+                                    <input type="radio" name="character" id="aether" value="aether.png">
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    
+                    
                 </div>
                 <div class="descripcion">
                     <label class="Desc">Descripción:</label>

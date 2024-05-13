@@ -71,8 +71,9 @@ main{
     margin-bottom: 20px;
     width: 223px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 
 }
 .RA{
@@ -143,6 +144,7 @@ input:focus{
     text-align: center;
     color: red;
 }
+
 @media only screen and (max-width: 480px) {
     html{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;

@@ -29,7 +29,7 @@ $logoequipo=null
     <section class="info">
         <div class="contenedor-info">
         <div class="foto">
-            <img src="./img/placeholder.png" alt="">
+            <img src="../../build/img/<?= $usuario->PFP ?>" class="prota">
         </div>
         <div class="informacion">
             <h3 class="NombreJugador"><?= $usuario->usrName;?></h3>
@@ -53,9 +53,9 @@ $logoequipo=null
                 <?php
                     if($equipo==0){
                         if($res[$equipo][0] != null){
-                
-                            $logoequipo?>=<img src="../../build/img/img_icon/<?php if($res[$equipo]){ echo $res[$equipo][0]->img;}?>" class="<?php if($res[$equipo][0]->rareza==4){ echo "g4 iconoequipo";} else if($res[$equipo][0]->rareza==5){ echo "g5 iconoequipo";}?>">
-                <?php 
+                ?>
+                            <img src="../../build/img/img_icon/<?php if($res[$equipo]){ echo $res[$equipo][0]->img;}?>" class="<?php if($res[$equipo][0]->rareza==4){ echo "g4 iconoequipo";} else if($res[$equipo][0]->rareza==5){ echo "g5 iconoequipo";}?>">
+                <?php               
                         }elseif($res[$equipo][1] != null){
                 ?>
                             <img src="../../build/img/img_icon/<?php if($res[$equipo]){ echo $res[$equipo][1]->img;}?>" class="<?php if($res[$equipo][1]->rareza==4){ echo "g4 iconoequipo";} else if($res[$equipo][1]->rareza==5){ echo "g5 iconoequipo";}?>">
