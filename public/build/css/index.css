@@ -392,25 +392,25 @@ picture{
 }
 
 /* Version movil */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 360px) {
     .contenedor-info{
         justify-content: flex-end;
     }
     .icon-teams{
-        width: 480px;
+        width: 550px;
     }
     .container-teams{
-        margin-left: 65px;
+        margin-left: 10px;
     }
     .containerpjs{
-        width: 480px;
+        width: 360px;
     }
     .cont{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(2, auto);
         height: 1000px;
-        width: 660px;
+        width: 360px;
         gap: 10px;
         padding: 80px;
     }
@@ -435,11 +435,19 @@ picture{
         text-align: center;
         margin: 5px;
     }
+    .uid_container{
+        margin-right: 0px;
+        margin-left: 60px;
+        justify-content: flex-start
+    }
+    .cerrar{
+        margin-left: 0px;
+    }
     .weapon, .element{
         margin: 5px;
     }
     .filtros{
-        width: 480px;
+        width: 600px;
         height: 300px;
     }
     .menu{
@@ -448,9 +456,26 @@ picture{
         flex-direction: column;
         justify-content: space-around;
     }
+    .contenedor-info{
+        margin-left: 300px;
+    }
+    .prota{
+        width: 0px;
+        height: 0px;
+    }
+    .nivel{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .botones{
+        margin-left: 0px;
+    }
+    .contenidos{
+        width: 600px;
+    }
   } 
   /* Version Tablet */
-  @media only screen and (min-width: 481px) and (max-width: 834px) {
+  @media only screen and (min-width: 361px) and (max-width: 834px) {
     .Borrarequipo a{
         margin-left: 10px;
         margin-top: 20px;
