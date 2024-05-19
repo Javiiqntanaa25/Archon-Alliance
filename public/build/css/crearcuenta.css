@@ -87,25 +87,27 @@ main{
     display: flex;
     flex-direction: column;
 }
-.crearboton button{
+.crearboton input{
+    text-decoration: none;
     font-size: large;
-    background-color: none;
     border: 1px solid wheat;
     color: wheat;
     border-radius: 1em;
     background: none;
-    transition: 0.5s;
     margin-top: 0.25rem;
 }
 
-.crearboton button:hover{
-    background-color: wheat;
-    color: black;
-    box-shadow: 2px 0px 3px 3px rgb(240, 228, 173);
-    border-color: rgba(240, 228, 173, 0.822);
+.crearboton input:hover{
+    transition: 1.5s;
+    cursor: pointer;
+    transform: scale(1.2);
+    background-color: rgba(243, 220, 92, 0.048);
+    color: rgb(241, 142, 49);
+    box-shadow: 2px 0px 3px 3px rgb(252, 160, 74);
+    border-color: rgba(48, 47, 44, 0.822);
 }
 
-.crearboton button:active{
+.crearboton:active{
     background-color: wheat;
     color: black;
 }
@@ -138,6 +140,22 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 input:focus{
     outline: none;
+}
+.existingAcc{
+    padding-top: 1rem;
+}
+
+.existingAcc a{
+    margin-left: 1em;
+    color: wheat;
+    border-bottom: 1px solid wheat;
+    text-decoration: none;
+}
+
+.existingAcc a:hover{
+    transition: 1s;
+    transform: scale(1.2) rotateX(35deg);
+    color: rgb(245, 162, 102);
 }
 
 .error{
@@ -249,7 +267,7 @@ input:focus{
         display: flex;
         flex-direction: column;
     }
-    .crearboton button{
+    .crearboton input{
         font-size: large;
         background-color: none;
         border: 1px solid wheat;
@@ -260,14 +278,14 @@ input:focus{
         margin-top: 0.25rem;
     }
     
-    .crearboton button:hover{
+    .crearboton input:hover{
         background-color: wheat;
         color: black;
         box-shadow: 2px 0px 3px 3px rgb(240, 228, 173);
         border-color: rgba(240, 228, 173, 0.822);
     }
     
-    .crearboton button:active{
+    .crearboton input:active{
         background-color: wheat;
         color: black;
     }

@@ -31,7 +31,7 @@
         <div class="uid_container">
             <label>UID:</label>
             <label class="uid"><?php echo $UID ?></label>
-            <a href="/cerrar-sesion.php" class="cerrar">Cerrar sesión</a>
+            <a href="/logout" class="cerrar">Cerrar sesión</a>
         </div>
     </header>
     <section class="filtros">

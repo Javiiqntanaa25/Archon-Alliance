@@ -390,6 +390,22 @@ picture{
     background-repeat: no-repeat;  
     background-size: cover;
 }
+.cerrar{
+    margin-left: 10em;
+    text-decoration: none;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    color: wheat;
+    border-bottom: 1px solid wheat;
+}
+
+.cerrar:hover{
+    transition: 1s;
+    cursor: pointer;
+    color: rgb(251, 255, 4);
+    transform: scale(1.2);
+}
 
 /* Version movil */
 @media only screen and (max-width: 360px) {

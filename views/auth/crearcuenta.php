@@ -32,21 +32,21 @@
                         <input type="text" name="ID" readonly value="<?= $uid ?>">
                     </div>
                     <div class="password">
-                        <label>Nombre: </label> <input type="text" id="name" name="usrName">
+                        <label>Nombre: </label> <input type="text" id="name" name="usrName" required autocomplete="off">
                     </div>
                     <div class="password">
-                        <label>Contraseña: </label> <input type="text" id="password" name="Password">
+                        <label>Contraseña: </label> <input type="text" id="password" name="Password" required autocomplete="off">
                     </div>
                 </div>
                 <div class="datos">
                     <div class="niveles">
                         <div class="RA">
                             <label class="ra">RA:</label> 
-                            <input type="number" min="1" max="60" id="ra" name="lvl">
+                            <input type="number" min="1" max="60" id="ra" name="lvl" required autocomplete="off">
                         </div>
                         <div class="NM">
                             <label class="nm">NM:</label>
-                            <input type="number" min="1" max="8" id="nm" name="WorldLevel">
+                            <input type="number" min="1" max="8" id="nm" name="WorldLevel" required autocomplete="off">
                         </div>
                     </div>
                         <div class="pjprincipal">
@@ -54,11 +54,11 @@
                             <div class="genero">
                                 <div class="femenino">
                                     <label class="Lumine" >Lumine</label>
-                                    <input type="radio" name="character" id="lumine" value="lumine.png">
+                                    <input type="radio" name="character" id="lumine" value="lumine.png" required>
                                 </div>
                                 <div class="masculino">
                                     <label class="Aether" >Aether</label>
-                                    <input type="radio" name="character" id="aether" value="aether.png">
+                                    <input type="radio" name="character" id="aether" value="aether.png" required>
                                 </div>
                                 
                             </div>
@@ -69,12 +69,13 @@
                 </div>
                 <div class="descripcion">
                     <label class="Desc">Descripción:</label>
-                    <input type="text" id="description" name="usrDescription">
+                    <input type="text" id="description" name="usrDescription" required autocomplete="off">
                 </div>
                 <a class="crearboton">
                     <input type="submit" value="Crear Cuenta">
                     <!-- <button type="submit">Crear cuenta</button> -->
                 </a>
+                <label for="cuenta" class="existingAcc">¿Ya tienes cuenta?<a href="/login">Login</a></label>
             </div>
         </form>
     </main>

@@ -30,11 +30,11 @@
             ?>
                 <div class="uid">
                 <label for="uid">UID:</label>
-                <input type="text" id="uid" name="ID" required>
+                <input type="text" id="uid" name="ID" required autocomplete="off">
                 </div>
                 <div class="password">
                     <label>Password: </label>
-                    <input type="text" id="password" name="Password" required>
+                    <input type="password" id="password" name="Password" required autocomplete="off" >
                 </div>
             </div>
             <a href="" class="boton">
