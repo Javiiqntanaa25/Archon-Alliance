@@ -423,13 +423,13 @@ picture{
         grid-template-columns: repeat(2, 1fr);
     }
     .personaje{
-        width: 142px;
+        width: 90px;
         height: 232px;
     }
     picture{
         height: 50%;
         width: 50%;
-        margin-left: 35px;
+        margin-left: 25px;
     }
     .personaje h3{
         text-align: center;
@@ -447,14 +447,17 @@ picture{
         margin: 5px;
     }
     .filtros{
-        width: 600px;
-        height: 300px;
+        width: 360px;
+        height: 400px;
+        margin-bottom: 30px;
     }
     .menu{
         margin-bottom: 20px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-around;
+        height: 400px;
+        
     }
     .contenedor-info{
         margin-left: 300px;
@@ -471,7 +474,36 @@ picture{
         margin-left: 0px;
     }
     .contenidos{
-        width: 600px;
+        width: 360px;
+    }
+    .elementos{
+        display: flex;
+        height: 400px;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-between;
+    }
+    .rarezas{
+        display: flex;
+        height: 400px;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+    .armas{
+        display: flex;
+        height: 400px;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-around
+    }
+    .elementos a{
+        width: 50px;
+        height: 50px;
+    }
+    .rareza{
+        width: 50px;
+        height: 50px;
     }
   } 
   /* Version Tablet */
